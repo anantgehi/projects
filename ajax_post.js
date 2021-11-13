@@ -28,7 +28,7 @@
                 document.getElementById("list").innerHTML+="<li>"+jsonObj[i].id+"&nbsp;"+jsonObj[i].name+"&nbsp;"+jsonObj[i].country+"&nbsp;"+jsonObj[i].logo+"&nbsp;"+jsonObj[i].slogan+"&nbsp;"+jsonObj[i].head_quaters+"&nbsp;"+jsonObj[i].website+"&nbsp;"+jsonObj[i].established+"&nbsp;"+"</li>"+"<br>";
                 }
                 */
-                for(i=0;i<jsonObj.length;i++){
+                for(i=0;i<2;i++){
                 if(jsonObj[i].id==find){
                     document.getElementById("list").innerHTML=
                     "<table border=\"1\" align=\"center\">"+
@@ -63,12 +63,12 @@
         
         var id = parseInt(document.getElementById("id").value);
         var name = document.getElementById("name").value;
-        var country; //= document.getElementById("country").value;
-        var logo; //= document.getElementById("logo").value;
-        var slogan; //= document.getElementById("slogan").value;
-        var head_quaters; //= document.getElementById("head_quaters").value;
-        var website; //= document.getElementById("website").value;
-        var established; //= document.getElementById("established").value;
+        var country=0; //= document.getElementById("country").value;
+        var logo=0; //= document.getElementById("logo").value;
+        var slogan=0; //= document.getElementById("slogan").value;
+        var head_quaters=0; //= document.getElementById("head_quaters").value;
+        var website=0; //= document.getElementById("website").value;
+        var established=0; //= document.getElementById("established").value;
 
         //send request
         var newairline = 
