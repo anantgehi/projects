@@ -13,7 +13,7 @@
     
         //Send the request
         jsonhttp.send(null);
-        document.getElementById("status2")="<b>Requesting...</b>" 
+        document.getElementById("status2").innerHTML="<b>Requesting...</b>" 
         
         if
     } 
@@ -34,7 +34,7 @@
                 if(jsonObj[i].id==find){
                     document.getElementById("list").innerHTML="<li>"+"ID : "+jsonObj[i].id+"<br>"+"NAME : "+jsonObj[i].name+"<br>"+"COUNTRY : "+jsonObj[i].country+"<br>"+"LOGO : "+jsonObj[i].logo+"<br>"+"SLOGAN : "+jsonObj[i].slogan+"<br>"+"HEAD QUARTERS : "+jsonObj[i].head_quaters+"<br>"+"WEBSITE : "+jsonObj[i].website+"<br>"+"ESTABLISHED : "+jsonObj[i].established+"<br>"+"</li>"+"<br>";
                 }
-                document.getElementById("status2")="<b>Received</b>" 
+                document.getElementById("status2").innerHTML="<b>Received</b>" 
                 
                 }
             }
@@ -87,14 +87,14 @@
         */
         console.log(newairline);
         xhr.send(newairline);
-        document.getElementById("status1")="<b>Sending...</b>" 
+        document.getElementById("status1").innerHTML="<b>Sending...</b>" 
         xhr.onreadystatechange = function () {  //Responds HTTP server codes when anything happens
             
             if (xhr.status == 400) {
-                document.getElementById("status1")="<b>Duplicate Entry found...</b>" 
+                document.getElementById("status1").innerHTML="<b>Duplicate Entry found...</b>" 
             }
             else {
-                document.getElementById("status1")="<b>Sent Successfully...</b>"
+                document.getElementById("status1").innerHTML="<b>Sent Successfully...</b>"
             }
             
         }
