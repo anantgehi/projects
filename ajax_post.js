@@ -34,12 +34,12 @@
                     "<table border=\"1\" align=\"center\">"+
                     "<tr><td><b>ID</b></td><td>"            +jsonObj[i].id+"</td></tr>"+
                     "<tr><td><b>NAME</b></td><td>"          +jsonObj[i].name+"</td></tr>"+
-                    "<tr><td><b>COUNTRY</b></td><td>"       +jsonObj[i].country+"</td></tr>"+
-                    "<tr><td><b>LOGO</b></td><td>"          +jsonObj[i].logo+"</td></tr>"+
-                    "<tr><td><b>SLOGAN</b></td><td>"        +jsonObj[i].slogan+"</td></tr>"+
-                    "<tr><td><b>HEAD QUARTERS</b></td><td>" +jsonObj[i].head_quaters+"</td></tr>"+
-                    "<tr><td><b>WEBSITE</b></td><td>"       +jsonObj[i].website+"</td></tr>"+
-                    "<tr><td><b>ESTABLISHED</b></td><td>"   +jsonObj[i].established+"</td></tr>"+
+                    //"<tr><td><b>COUNTRY</b></td><td>"       +jsonObj[i].country+"</td></tr>"+
+                    //"<tr><td><b>LOGO</b></td><td>"          +jsonObj[i].logo+"</td></tr>"+
+                    //"<tr><td><b>SLOGAN</b></td><td>"        +jsonObj[i].slogan+"</td></tr>"+
+                    //"<tr><td><b>HEAD QUARTERS</b></td><td>" +jsonObj[i].head_quaters+"</td></tr>"+
+                    //"<tr><td><b>WEBSITE</b></td><td>"       +jsonObj[i].website+"</td></tr>"+
+                    //"<tr><td><b>ESTABLISHED</b></td><td>"   +jsonObj[i].established+"</td></tr>"+
                     "</table>";
                 }
                  
@@ -105,7 +105,7 @@
                 document.getElementById("status1").innerHTML="<b>Duplicate Entry found...Try again</b>" 
             }
             else {
-                document.getElementById("status1").innerHTML="<b>Sent Successfully...</b>"
+                document.getElementById("status1").innerHTML="<b>Posted Successfully...</b>"
             }
             
         }
