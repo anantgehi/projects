@@ -13,10 +13,7 @@
     
         //Send the request
         jsonhttp.send(null);
-        document.getElementById("status2").innerHTML="<b>Requesting...</b>" 
-        
-        if
-    } 
+        document.getElementById("status2").innerHTML="<b>Requesting...</b>";
             
         //what to do when server responds
         // What to do when response is ready
@@ -34,9 +31,9 @@
                 if(jsonObj[i].id==find){
                     document.getElementById("list").innerHTML="<li>"+"ID : "+jsonObj[i].id+"<br>"+"NAME : "+jsonObj[i].name+"<br>"+"COUNTRY : "+jsonObj[i].country+"<br>"+"LOGO : "+jsonObj[i].logo+"<br>"+"SLOGAN : "+jsonObj[i].slogan+"<br>"+"HEAD QUARTERS : "+jsonObj[i].head_quaters+"<br>"+"WEBSITE : "+jsonObj[i].website+"<br>"+"ESTABLISHED : "+jsonObj[i].established+"<br>"+"</li>"+"<br>";
                 }
-                document.getElementById("status2").innerHTML="<b>Received</b>" 
-                
+                 
                 }
+                document.getElementById("status2").innerHTML="<b>Received</b>"
             }
         }
     
