@@ -19,16 +19,16 @@
             if (jsonhttp.readyState == 4 && jsonhttp.status == 200) {
                 jsonObj=JSON.parse(jsonhttp.responseText);
                 
-                /*All data fetch*/
+                /*All data fetch
                 for(i=0;i<jsonObj.length;i++){
                 document.getElementById("list").innerHTML+="<li>"+jsonObj[i].id+"&nbsp;"+jsonObj[i].name+"&nbsp;"+jsonObj[i].country+"&nbsp;"+jsonObj[i].logo+"&nbsp;"+jsonObj[i].slogan+"&nbsp;"+jsonObj[i].head_quaters+"&nbsp;"+jsonObj[i].website+"&nbsp;"+jsonObj[i].established+"&nbsp;"+"</li>"+"<br>";
                 }
-                /*
+                */
                 for(i=0;i<jsonObj.length;i++){
                 if(jsonObj[i].id==find){
                     document.getElementById("list").innerHTML="<li>"+"ID : "+jsonObj[i].id+"<br>"+"NAME : "+jsonObj[i].name+"<br>"+"COUNTRY : "+jsonObj[i].country+"<br>"+"LOGO : "+jsonObj[i].logo+"<br>"+"SLOGAN : "+jsonObj[i].slogan+"<br>"+"HEAD QUARTERS : "+jsonObj[i].head_quaters+"<br>"+"WEBSITE : "+jsonObj[i].website+"<br>"+"ESTABLISHED : "+jsonObj[i].established+"<br>"+"</li>"+"<br>";
                 }
-                */
+                
                 }
             }
         }
@@ -82,4 +82,4 @@
         xhr.send(newairline);
     }
     
-
+    }
