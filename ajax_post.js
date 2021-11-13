@@ -63,12 +63,12 @@
         
         var id = parseInt(document.getElementById("id").value);
         var name = document.getElementById("name").value;
-        var country = document.getElementById("country").value;
-        var logo = document.getElementById("logo").value;
-        var slogan = document.getElementById("slogan").value;
-        var head_quaters = document.getElementById("head_quaters").value;
-        var website = document.getElementById("website").value;
-        var established = document.getElementById("established").value;
+        var country; //= document.getElementById("country").value;
+        var logo; //= document.getElementById("logo").value;
+        var slogan; //= document.getElementById("slogan").value;
+        var head_quaters; //= document.getElementById("head_quaters").value;
+        var website; //= document.getElementById("website").value;
+        var established; //= document.getElementById("established").value;
 
         //send request
         var newairline = 
