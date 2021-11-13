@@ -30,7 +30,7 @@
                 */
                 for(i=0;i<jsonObj.length;i++){
                 if(jsonObj[i].id==find){
-                    document.getElementById("list").innerHTML="<b>ID</b> : "+jsonObj[i].id+"<br>"+"<b>NAME</b> : "+jsonObj[i].name+"<br>"+"<b>COUNTRY</b> : "+jsonObj[i].country+"<br>"+"<b>LOGO</b> : "+jsonObj[i].logo+"<br>"+"<b>SLOGAN</b> : "+jsonObj[i].slogan+"<br>"+"<b>HEAD QUARTERS</b> : "+jsonObj[i].head_quaters+"<br>"+"<b>WEBSITE</b> : "+jsonObj[i].website+"<br>"+"<b>ESTABLISHED</b> : "+jsonObj[i].established+"<br>";
+                    document.getElementById("list").innerHTML="<table><tr><td>"+"<b>ID</b></td><td>"+jsonObj[i].id+"</td><br>"+"<tr><td><b>NAME</b></td><td>"+jsonObj[i].name+"</td><br>"+"<tr><td><b>COUNTRY</b></td><td>"+jsonObj[i].country+"</td><br>"+"<tr><td><b>LOGO</b></td><td>"+jsonObj[i].logo+"</td><br>"+"<tr><td><b>SLOGAN</b></td><td>"+jsonObj[i].slogan+"</td><br>"+"<tr><td><b>HEAD QUARTERS</b></td><td>"+jsonObj[i].head_quaters+"</td><br>"+"<tr><td><b>WEBSITE</b></td><td>"+jsonObj[i].website+"</td><br>"+"<tr><td><b>ESTABLISHED</b></td><td>"+jsonObj[i].established+"</td><br>";
                 }
                  
                 }
