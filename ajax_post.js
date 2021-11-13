@@ -39,6 +39,8 @@
     
     }
 
+}
+
 
     function postHandler() {
         console.log("success");
@@ -95,5 +97,5 @@
             }
             
         }
-    
+
     }
