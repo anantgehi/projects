@@ -30,7 +30,17 @@
                 */
                 for(i=0;i<jsonObj.length;i++){
                 if(jsonObj[i].id==find){
-                    document.getElementById("list").innerHTML="<table><tr><td>"+"<b>ID</b></td><td>"+jsonObj[i].id+"</td><br>"+"<tr><td><b>NAME</b></td><td>"+jsonObj[i].name+"</td><br>"+"<tr><td><b>COUNTRY</b></td><td>"+jsonObj[i].country+"</td><br>"+"<tr><td><b>LOGO</b></td><td>"+jsonObj[i].logo+"</td><br>"+"<tr><td><b>SLOGAN</b></td><td>"+jsonObj[i].slogan+"</td><br>"+"<tr><td><b>HEAD QUARTERS</b></td><td>"+jsonObj[i].head_quaters+"</td><br>"+"<tr><td><b>WEBSITE</b></td><td>"+jsonObj[i].website+"</td><br>"+"<tr><td><b>ESTABLISHED</b></td><td>"+jsonObj[i].established+"</td><br>";
+                    document.getElementById("list").innerHTML=
+                    "<table>"+
+                    "<tr><td><b>ID</b></td><td>"            +jsonObj[i].id+"</td></tr>"+
+                    "<tr><td><b>NAME</b></td><td>"          +jsonObj[i].name+"</td></tr>"+
+                    "<tr><td><b>COUNTRY</b></td><td>"       +jsonObj[i].country+"</td></tr>"+
+                    "<tr><td><b>LOGO</b></td><td>"          +jsonObj[i].logo+"</td></tr>"+
+                    "<tr><td><b>SLOGAN</b></td><td>"        +jsonObj[i].slogan+"</td></tr>"+
+                    "<tr><td><b>HEAD QUARTERS</b></td><td>" +jsonObj[i].head_quaters+"</td></tr>"+
+                    "<tr><td><b>WEBSITE</b></td><td>"       +jsonObj[i].website+"</td></tr>"+
+                    "<tr><td><b>ESTABLISHED</b></td><td>"   +jsonObj[i].established+"</td></tr>"+
+                    "</table>";
                 }
                  
                 }
