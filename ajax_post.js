@@ -31,7 +31,7 @@
                 for(i=0;i<jsonObj.length;i++){
                 if(jsonObj[i].id==find){
                     document.getElementById("list").innerHTML=
-                    "<table>"+
+                    "<table border=\"1\">"+
                     "<tr><td><b>ID</b></td><td>"            +jsonObj[i].id+"</td></tr>"+
                     "<tr><td><b>NAME</b></td><td>"          +jsonObj[i].name+"</td></tr>"+
                     "<tr><td><b>COUNTRY</b></td><td>"       +jsonObj[i].country+"</td></tr>"+
