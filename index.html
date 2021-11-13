@@ -10,6 +10,7 @@
 <body>
     <div style="text-align:center">
     <h1>Ajax Demo - Airline Data</h1>
+    <fieldset>
     <input type="text" name="" id="id" placeholder="ID"><br><br>
     <input type="text" name="" id="name" placeholder="NAME"><br><br>
     <input type="text" name="" id="country" placeholder="COUNTRY"><br><br>
@@ -21,13 +22,18 @@
     
     <button type="button" id="popBtn" class="btn btn-secondary" onclick="postHandler()">Post Data</button>&nbsp;<span id="status1"></span>
     <br><br>
+    </fieldset>
+    <br>
+    <fieldset>
     <input type="text" name="" id="find" placeholder="FIND ID"><br><br>
     <button type="button" id="fetchBtn" class="btn btn-primary" onclick="buttonClickHandler()">Get Data</button>&nbsp;<span id="status2"></span>
     </div>
     <br>
     <div id="list"></div>
-    <br><br>
-    <h3>- Anant Gehi</h3>
+    <br>
+    </fieldset>
+    <br>
+    <h3 align="center">- Anant Gehi</h3>
     <script src="ajax_post.js"></script>
 </body>
 
